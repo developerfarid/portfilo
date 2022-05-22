@@ -1,6 +1,15 @@
 .ok {
   color: red !important;
 }
+/* .hover-img {
+  transition: all 1s ease-in-out;
+}
+.hover-img:hover {
+  transform: scale(1.2);
+} */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
 .slick-slide {
   padding: 30px 60px;
   align-items: center;

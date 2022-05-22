@@ -57,63 +57,99 @@ const AllData = () => {
             tag: "UI/UX",
             title: "Chul urina",
             img: blog6,
-            bg: "#FFF0F0"
+            bg: "#FFF0F0",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum numquam asperiores, voluptatum fugiat reiciendis aspernatur, non, odio aperiam voluptas ex tempora vitae. Dolor, consequatur quidem! Quas magni distinctio dolorum dolore natus, vel numquam accusamus. Nostrum eligendi recusandae qui tempore deserunt!"
         },
         {
             id: "2",
             tag: "Web Design",
             title: "Aura Dione",
             img: work2,
-            bg: "#FFF3FC"
+            bg: "#FFF3FC",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
             id: "3",
             tag: "Logo",
             title: "Chul urina",
             img: work3,
-            bg: "#FFF0F0"
+            bg: "#FFF0F0",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
             id: "4",
             tag: "Video",
             title: "Chul urina",
             img: work4,
-            bg: "#E9FAFF"
+            bg: "#E9FAFF",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
             id: "5",
             tag: "UI/UX",
             title: "Chul urina",
             img: blog4,
-            bg: "#FFFAE9"
+            bg: "#FFFAE9",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
             id: "6",
             tag: "Video",
             title: "Chul urina",
             img: work6,
-            bg: "#F4F4FF"
+            bg: "#F4F4FF",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
             id: "7",
             tag: "UI/UX",
             title: "Chul urina",
             img: work7,
-            bg: "#FFF0F8"
+            bg: "#FFF0F8",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
             id: "8",
             tag: "Web Design",
             title: "Chul urina",
             img: work8,
-            bg: "#FFF0F8"
+            bg: "#FFF0F8",
+            client: "Envato",
+            langages: "HTML, CSS, Javascript",
+            link:"https://www.envato.com",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         },
         {
-            id: "8",
+            id: "9",
             tag: "Logo",
             title: "Chul urina",
             img: blog2,
-            bg: "#FCF4FF"
+            bg: "#FCF4FF",
+            client: "Themeforest",
+            langages: " CSS, Javascript, React",
+            link: "https://www.themeforest.net",
+            description:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non suscipit voluptatibus minima ullam maiores sequi nihil placeat error, vero eaque doloremque reiciendis amet pariatur consequuntur. Nostrum, dolore, amet eligendi ipsam enim quisquam, corrupti asperiores nihil excepturi aspernatur placeat iure."
         }
     ]
     const blogsData = [
@@ -124,6 +160,7 @@ const AllData = () => {
             category: "Inspiration",
             title: "How to Own Your Audience by Creating an Email List.",
             bg: "#FCF4FF",
+            description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non."
         },
         {
             id: '4',
@@ -131,7 +168,8 @@ const AllData = () => {
             date: "27 April",
             category: "Inspiration",
             title: "Everything You Need to Know About Web Accessibility.",
-            bg: "#EEFBFF"
+            bg: "#EEFBFF",
+            description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non."
         },
         {
             id: '2',
@@ -140,6 +178,7 @@ const AllData = () => {
             category: "Web Design",
             title: "The window know to say beside you",
             bg: "#FFF0F0",
+            description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non."
         },
         {
             id: '5',
@@ -147,7 +186,8 @@ const AllData = () => {
             date: "27 April",
             category: "Inspiration",
             title: "Top 10 Toolkits for Deep Learning in 2021.",
-            bg: "#FCF4FF"
+            bg: "#FCF4FF",
+            description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non."
         },
         {
             id: '3',
@@ -156,6 +196,7 @@ const AllData = () => {
             category: "Inspiration",
             title: "How to Own Your Audience by Creating an Email List.",
             bg: "#FCF4FF",
+            description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non."
         },
         {
             id: '6',
@@ -163,7 +204,8 @@ const AllData = () => {
             date: "27 April",
             category: "Inspiration",
             title: "Everything You Need to Know About Web Accessibility.",
-            bg: "#EEFBFF"
+            bg: "#EEFBFF",
+            description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur quo obcaecati rerum sit non."
         },
 
 

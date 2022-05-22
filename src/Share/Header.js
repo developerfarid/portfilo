@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import React from 'react';
+import { Link,NavLink, Outlet } from 'react-router-dom';
 import { FaRegUser, FaBlogger, FaSun, FaMoon } from 'react-icons/fa';
 import { FiSun } from 'react-icons/fi';
 import { CgNotes } from 'react-icons/cg';
 import { MdDarkMode } from 'react-icons/md';
 import { RiContactsBookLine } from 'react-icons/ri';
-import { ThemeContext } from './ThemeContext';
+
 import UseData from '../Hooks/UseData';
+import logo from "../images/280361415_1230236714183639_6562681360736438134_n.png";
 
 const Header = () => {
     const menuItem = [
@@ -110,7 +111,7 @@ const Header = () => {
                 <div className='flex justify-between items-center'>
                     <div>
                         <div className='flex items-center space-x-4 '>
-                        <Link className='text-5xl font-semibold' to='/'>Bostami</Link>
+                        <Link className='text-5xl font-semibold' to='/'><img src={logo} alt="" /></Link>
                         { !check ?  <span ><MdDarkMode className='text-white' onClick={()=> handle("dark")} /></span>:
                         <span ><FiSun className='text-white' onClick={()=> handle("light")}  /></span>}
                       </div>
@@ -122,8 +123,8 @@ const Header = () => {
                     <nav className='hidden md:block'>
                         <ul className='flex my-12 '>
                             {menuItem.map((item) => (
-                                <li className=' rounded-md hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white transition-colors duration-300 ease-in-out  font-poppins bg-white dark:bg-[#212425] dark:text-[#A6A6A6] text-gray-lite font-medium mx-2.5' key={item?.id}>
-                                    <Link className='flex text-xtiny py-2.5 px-5 items-center' to={item?.link}><span className='mr-2 text-xl'>{item?.icon}</span> {item?.name}</Link>
+                                <li className=' rounded-md hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] cursor-pointer hover:text-white transition-colors duration-300 ease-in-out  font-poppins bg-white dark:bg-[#212425] dark:text-[#A6A6A6] dark:hover:text-white text-gray-lite font-medium mx-2.5' key={item?.id}>
+                                    <NavLink    className='flex   text-xtiny py-2.5 px-5 items-center' to={item?.link}><span className='mr-2 text-xl'>{item?.icon}</span> {item?.name}</NavLink>
                                 </li>
                             ))}
                         </ul>

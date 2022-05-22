@@ -1,6 +1,6 @@
 import { Line } from 'rc-progress';
 import React from 'react';
-import { MdOutlineSchool } from 'react-icons/md';
+import { MdLocalFlorist, MdOutlineSchool } from 'react-icons/md';
 import UseData from '../../Hooks/UseData';
 import Footer from '../../Share/Footer';
 
@@ -98,8 +98,8 @@ const Resume = () => {
     ]
 
 
-    const { local, check, okk } = UseData()
-  console.log(local, okk);
+    const { local} = UseData()
+
 
     return (
         <>
@@ -145,7 +145,7 @@ const Resume = () => {
 
                             {lineArray.map((item, i) => (
                              <div key={i} className=' mb-5'>
-                                    <div className='flex justify-between py-1'><span className=' text-3xl text-gray-lite dark:text-[#A6A6A6]'>{item?.name }</span><span className=' text-3xl text-gray-lite pr-5 dark:text-[#A6A6A6]'>{item?.number }%</span></div>
+                                    <div className='flex justify-between py-1'><span className=' text-base text-gray-lite font-semibold dark:text-[#A6A6A6]'>{item?.name }</span><span className=' text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]'>{item?.number }%</span></div>
 
                              <Line percent={item?.number} strokeWidth={1} trailWidth={1} trailColor={`${local ? "#1C1C1C" :'#EDF2F2'}` } strokeColor={item?.color} />
                          </div>
