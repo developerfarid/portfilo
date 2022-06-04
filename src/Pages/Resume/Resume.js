@@ -1,6 +1,7 @@
 import { Line } from 'rc-progress';
 import React from 'react';
-import { MdLocalFlorist, MdOutlineSchool } from 'react-icons/md';
+import { MdOutlineBusinessCenter, MdOutlineSchool } from 'react-icons/md';
+import { FaAward ,FaShoppingBag} from 'react-icons/fa';
 import UseData from '../../Hooks/UseData';
 import Footer from '../../Share/Footer';
 
@@ -114,15 +115,15 @@ const Resume = () => {
                                 <h4 className='text-5xl dark:text-white font-medium'>Education</h4>
                             </div>
                             <div className='flex items-center space-x-2'>
-                                <MdOutlineSchool className="text-6xl text-[#F95054]" />
+                                <MdOutlineBusinessCenter className="text-6xl text-[#F95054]" />
                                 <h4 className='text-5xl dark:text-white font-medium'>Experience</h4>
                             </div>
                             <div className='flex items-center space-x-2'>
-                                <MdOutlineSchool className="text-6xl text-[#F95054]" />
+                                <FaAward className="text-6xl text-[#F95054]" />
                                 <h4 className='text-5xl dark:text-white font-medium'>Awards</h4>
                             </div>
                         </div>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6 mt-4'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 mt-4'>
                             {
                                 resumeArray.map((item, i) => (
                                     <div key={i} style={{background: `${local === "dark" ? "transparent" : item?.bg}`}} className='py-4 pl-5 pr-3 space-y-2 rounded-lg  border-gray border-[1px]'>
@@ -149,6 +150,7 @@ const Resume = () => {
 
                              <Line percent={item?.number} strokeWidth={1} trailWidth={1} trailColor={`${local ? "#1C1C1C" :'#EDF2F2'}` } strokeColor={item?.color} />
                          </div>
+                       
                          ))  }
              
                         </div>

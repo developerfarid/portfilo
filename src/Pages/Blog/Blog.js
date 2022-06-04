@@ -42,7 +42,7 @@ const Blog = () => {
                 </div>
                 <Modal isOpen={isOpen}
                     onRequestClose={() => setIsOpen(false)} className='  outline-none flex items-center h-[100vh]     mx-auto  p-4 md:p-8  rounded-2xl my-8'>
-                    <div className='w-full  lg:w-[850px] bg-white dark:bg-black mx-auto rounded-xl p-8 relative shadow-lg '>
+                    <div className='w-full  lg:w-[850px] bg-white dark:bg-[#060606d2] mx-auto rounded-xl p-8 relative shadow-lg '>
                         <BsXCircle onClick={() => setIsOpen(false)} className='text-7xl cursor-pointer  absolute -right-10 -top-6  text-white transition transform hover:rotate-45 duration-300 ease-in-out ' />
                         <img className='w-full md:h-[500px]  object-cover rounded-xl mt-6' src={singleData.img} alt="" />
                         <div className='flex mt-4 text-tiny text-black dark:text-white'>

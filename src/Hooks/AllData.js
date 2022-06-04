@@ -49,7 +49,6 @@ const AllData = () => {
             setLocal("dark")
         }
         localStorage?.getItem("theme") === "dark" ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
-
     }
     const workItems = [
         {

@@ -63,7 +63,7 @@ const Portfilo = () => {
                 </Masonry>
                 <Modal isOpen={isOpen}
                     onRequestClose={() => setIsOpen(false)} className='  outline-none flex items-center h-[100vh]     mx-auto  p-4 md:p-8  rounded-2xl my-8'>
-                    <div className='w-full  lg:w-[850px] bg-white dark:bg-black mx-auto rounded-xl p-8 relative shadow-lg '>
+                    <div className='w-full  lg:w-[850px] bg-white dark:bg-[#060606d2] mx-auto rounded-xl p-8 relative shadow-lg '>
                         <BsXCircle onClick={()=> setIsOpen(false)} className='text-7xl cursor-pointer  absolute -right-10 -top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out ' />
                         <h2 className='text-yellow-500 text-6xl text-center font-bold'>{singleData.tag} Project</h2>
                         <div className='grid grid-cols-1 md:grid-cols-2 my-6'>

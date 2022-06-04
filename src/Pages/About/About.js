@@ -1,6 +1,9 @@
 import React from 'react';
 import { FaEdit, FaEnvelopeOpenText, FaMapMarkerAlt, FaMobileAlt, FaPhotoVideo, FaRegCalendarAlt } from 'react-icons/fa';
-import { RiCodeSSlashLine } from 'react-icons/ri';
+import { RiCodeSSlashLine , RiCodeSSlashFill } from 'react-icons/ri';
+import { FiSettings} from 'react-icons/fi';
+import { HiOutlinePhotograph} from 'react-icons/hi';
+import { MdDeveloperMode} from 'react-icons/md';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
@@ -90,7 +93,7 @@ const About = () => {
         },
         {
             id: "2",
-            icon: FaEdit,
+            icon: MdDeveloperMode,
             title: "App Development",
             des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
             color: '#DDA10C',
@@ -106,7 +109,7 @@ const About = () => {
         },
         {
             id: "4",
-            icon: FaPhotoVideo,
+            icon: HiOutlinePhotograph,
             title: "Photography",
             des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
             color: '#FF6080',
@@ -114,7 +117,7 @@ const About = () => {
         },
         {
             id: "5",
-            icon: FaEdit ,
+            icon: FiSettings ,
             title: "Managment",
             des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
             color: '#FF75D8',
@@ -122,7 +125,7 @@ const About = () => {
         },
         {
             id: "6",
-            icon: FaEdit ,
+            icon: RiCodeSSlashFill ,
             title: "Web Development",
             des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.",
             color: '#269FFF',
@@ -195,7 +198,7 @@ const About = () => {
                     </div>
                     <div className='  pb-12 '>
                         <h3 className='text-[35px] dark:text-white font-medium pb-5'>What I do!</h3>
-                        <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                        <div className='grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 '>
 
                             {experienceArray.map((item) => {
                                 const Icon = item.icon
@@ -217,10 +220,10 @@ const About = () => {
 
                     </div>
                     <div>
-                        <Slider className='bg-[#F8FBFB] dark:bg-[#0D0D0D]   py-10 rounded-xl'  {...settings}>
+                        <Slider className='bg-[#F8FBFB] dark:bg-[#0D0D0D] max-w-full h-auto   py-10 rounded-xl'  {...settings}>
 
                             {imgArray.map((item) => (
-                                <img className='overflow-hidden' src={item} alt="" />
+                                <img  className=' overflow-hidden brand-img' src={item} alt="" />
                             ))}
 
                         </Slider>
