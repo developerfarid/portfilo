@@ -1,30 +1,25 @@
-import { Line } from "rc-progress";
-import React from "react";
-import { MdOutlineBusinessCenter, MdOutlineSchool } from "react-icons/md";
-import { FaAward, FaShoppingBag } from "react-icons/fa";
-import UseData from "../../Hooks/UseData";
-import Footer from "../../Share/Footer";
-import LineItem from "./LineItem";
-import ResumeCard from "./ResumeCard";
+import React from 'react';
+import UseData from '../../Hooks/UseData';
+import Footer from '../../Share/Footer';
+import LineItem from './LineItem';
+import ResumeCard from './ResumeCard';
 
-const Resume = () => {
-
-
+const ResumeTwo = () => {
+    
   const { local, lineArray, resumeArray } = UseData();
-
-  return (
-    <>
+    return (
+        <>
       <section className="bg-white  rounded-2xl dark:bg-black">
-        <div className="container  sm:px-5 md:px-10 lg:px-20">
-          <div className="py-12 px-4">
+        <div className="container  sm:px-5 md:px-10 lg:px-14">
+          <div className="py-12 px-4 md:px-0">
             <h2 className="after-effect after:left-44">Resume</h2>
 
             {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
               
               
             </div> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 mt-4">
-              {resumeArray.map((item, i) => <ResumeCard item={item} key={i} /> )}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6 mt-4">
+              {resumeArray.slice(0,2).map((item, i) => <ResumeCard item={item} key={i} /> )}
             </div>
           </div>
         </div>
@@ -49,10 +44,10 @@ const Resume = () => {
                 <button className="resume-btn">Time Management</button>
                 <button className="resume-btn">Flexibility</button>
                 <button className="resume-btn">Print</button>
-                <button className="resume-btn">Print</button>
+                {/* <button className="resume-btn">Print</button>
                 <button className="resume-btn">Time Management</button>
                 <button className="resume-btn">Flexibility</button>
-                <button className="resume-btn">Print</button>
+                <button className="resume-btn">Print</button> */}
               </div>
             </div>
           </div>
@@ -64,7 +59,7 @@ const Resume = () => {
 
       {/* Working and Knowledges Section End */}
     </>
-  );
+    );
 };
 
-export default Resume;
+export default ResumeTwo;

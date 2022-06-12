@@ -10,6 +10,9 @@
 .ReactModal__Overlay {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
+ReactModal__Content ReactModal__Content--after-open{
+  overflow-y: scroll!important;
+}
 .slick-slide {
   padding: 30px 60px;
   align-items: center;

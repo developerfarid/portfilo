@@ -20,20 +20,20 @@ const HomePage = () => {
       </h3>
       <p className="mb-4 text-[#7B7B7B]">Ui/Ux Designer</p>
       <div className="flex space-x-3">
-        <span className="social-btn text-[#1773EA]">
+        <span className="socialbtn text-[#1773EA]">
           <FaFacebookF />
         </span>
-        <span className="social-btn text-[#1C9CEA]">
+        <span className="socialbtn text-[#1C9CEA]">
           <FaTwitter />
         </span>
-        <span className="social-btn text-[#e14a84] ">
+        <span className="socialbtn text-[#e14a84] ">
           <FaDribbble />
         </span>
-        <span className="social-btn text-[#144679]">
+        <span className="socialbtn text-[#144679]">
           <FaLinkedinIn />
         </span>
       </div>
-      <button className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] px-8 py-3 text-lg text-white rounded-[35px] mt-6">
+      <button className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6">
         <svg
           className="mr-3"
           width="22"

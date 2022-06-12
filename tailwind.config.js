@@ -11,7 +11,7 @@ module.exports = {
       center: true,
   
         // or have default horizontal padding
-        padding: '1rem',
+        
   
         // default breakpoints but with 40px removed
         screens: {
@@ -46,6 +46,7 @@ module.exports = {
       backgroundImage: {
         'homeBg': "url('/src/images/bg.jpg')",
         'homeBg-dark': "url('/src/images/bg-dark.jpg')",
+        'homeTwoBg-dark': "url('/src/images/67443 1.jpg')",
        
       },
       colors: {
