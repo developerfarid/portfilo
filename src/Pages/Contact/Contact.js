@@ -46,15 +46,15 @@ const Contact = () => {
     const { local } = UseData()
 
     return (
-        <section className='bg-white  rounded-2xl dark:bg-black'>
+        <section className='bg-white  md:rounded-2xl dark:bg-black'>
             <div className='container    px-2 sm:px-5 md:px-10 lg:px-20'>
                 <div className='py-12'>
                     <h2 className='after-effect after:left-40 mb-12'>Contact</h2>
-                    <div className='grid grid-cols-12 gap-x-20'>
-                        <div className='col-span-10 md:col-span-4 space-y-6'>
+                    <div className='lg:flex gap-x-20'>
+                        <div className='w-full lg:w-[40%] xl:w-[30%] space-y-6'>
                             {contactArray.map((item, i) => {
                          
-                                return (<div style={{ background: `${local === "dark" ? "#0D0D0D" : item?.bg}` }} className='flex dark:bg-transparent p-[30px]  border-[#A6A6A6] gap-2 rounded-xl '>
+                                return (<div style={{ background: `${local === "dark" ? "#0D0D0D" : item?.bg}` }} className='flex flex-wrap    dark:bg-transparent p-[30px]  border-[#A6A6A6] gap-2 rounded-xl '>
                                     <span className='w-8 mt-2'>
                                         <img src={item.icon} alt="" className='text-4xl dark:text-white' />
                                     </span>
@@ -68,7 +68,7 @@ const Contact = () => {
                             })}
 
                         </div>
-                        <div className='col-span-8 md:col-span-8'>
+                        <div className='w-full lg:w-[60%] xl:w-[70%]'>
                             <CommonContact condition={false} />
 
 

@@ -47,6 +47,7 @@ module.exports = {
         'homeBg': "url('/src/images/bg.jpg')",
         'homeBg-dark': "url('/src/images/bg-dark.jpg')",
         'homeTwoBg-dark': "url('/src/images/67443 1.jpg')",
+        'previewBg': "url('/src/images/download 1.png')",
        
       },
       colors: {

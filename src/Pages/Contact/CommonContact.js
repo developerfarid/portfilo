@@ -2,7 +2,7 @@ import React from "react";
 
 const CommonContact = ({ conditon }) => {
   return (
-    <div className= {`${conditon ? 'm-8 p-20' :" mb-16 mx-16 p-16 dark:border-[#212425] dark:border-2 "} bg-color-810 rounded-xl dark:bg-black`} >
+    <div className= {`${conditon ? 'm-8 p-20' :" mb-16 p-4  lg:p-12  xl:p-16 dark:border-[#212425] dark:border-2 "} bg-color-810 rounded-xl dark:bg-black`} >
       <h3 className="text-4xl  ">
         <span className="text-gray-lite dark:text-[#A6A6A6] ">
           I’M ALWAYS OPEN TO DISCUSSING PRODUCT

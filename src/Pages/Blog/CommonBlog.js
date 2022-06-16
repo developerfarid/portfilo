@@ -14,7 +14,7 @@ const CommonBlog = ({items,count}) => {
         handleBlogsData(id)
     }
     return (
-        <section className='bg-white  rounded-2xl dark:bg-black'>
+        <section className='bg-white  md:rounded-2xl dark:bg-black'>
             <div className='container    px-2 sm:px-5 md:px-10 lg:px-20'>
                 <div className='py-12'>
                     <h2 className='after-effect after:left-32'>Blogs</h2>
@@ -35,18 +35,20 @@ const CommonBlog = ({items,count}) => {
                     </div>
                 </div>
                 <Modal isOpen={isOpen}
-                    onRequestClose={() => setIsOpen(false)} className='w-10/12 h-[70vh]  top-[10vh] outline-none flex items-center md:h-[100vh]     mx-auto  p-4 md:p-8  rounded-2xl my-8'>
-                    <div className='  lg:w-[850px h-[70vh] overflow-y-scroll top-[10vh]  bg-white dark:bg-[#060606d2] mx-auto rounded-xl p-8 relative shadow-lg '>
+                    onRequestClose={() => setIsOpen(false)} className='outline-none flex items-center   p-4 md:p-8  rounded-2xl my-8'>
+                    <div className='   w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#060606d2] mx-auto rounded-xl p-4 md:p-8 relative shadow-lg '>
+                        <div className='h-[80vh] md:h-auto overflow-y-scroll no-scrollbar bg-white'>
                         <BsXCircle onClick={() => setIsOpen(false)} className='text-7xl cursor-pointer  absolute -right-10 -top-6  text-white transition transform hover:rotate-45 duration-300 ease-in-out ' />
                         <img className='w-full md:h-[500px]  object-cover rounded-xl mt-6' src={singleData.img} alt="" />
                         <div className='flex mt-4 text-tiny text-black dark:text-white'>
                                     <span>{singleData?.date}</span>
                                     <span className='pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2'>{singleData?.category}</span>
                         </div>
-                        <h2 onClick={()=> setIsOpen(true)} className='dark:text-white cursor-pointer text-3xl mt-2 duration-300 transition hover:text-[#FA5252]'>{singleData.title}</h2>
+                        <h2 className='dark:text-white cursor-pointer sm:text-3xl mt-2 duration-300 transition hover:text-[#FA5252]'>{singleData.title}</h2>
                         <p className='dark:text-white my-4 '>{singleData.description }</p>
 
                     
+                    </div>
                     </div>
 
 

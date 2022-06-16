@@ -17,20 +17,23 @@ import Portfilo from "./Pages/Portfilo/Portfilo";
 import PortfiloTwo from "./Pages/Portfilo/PortfiloTwo";
 import Resume from "./Pages/Resume/Resume";
 import ResumeTwo from "./Pages/Resume/ResumeTwo";
+import Preview from "./Share/Preview";
 
 function App() {
   return (
     <ContextProvider>
       <BrowserRouter>
         <Routes>
-          <Route   element={<Home />}>
+          <Route path="/" element={<Preview />} />
+          <Route path="/home"   element={<Home />}>
            
-            <Route index path='/' element={<HomePage />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/blogs" element={<Blog />} />
-            <Route path="/works" element={<Portfilo />} />
+            <Route index  element={<HomePage />} />
+            <Route path="homePage"  element={<HomePage />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="blogs" element={<Blog />} />
+            <Route path="works" element={<Portfilo />} />
 
           </Route>
           <Route  path='/homeTwo' element={<HomeTwo />}>

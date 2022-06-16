@@ -230,37 +230,37 @@ const AllData = () => {
         {
             id: "01",
             name: "Home",
-            link: "/",
+            link: "/home/homePage",
             icon: <AiOutlineHome />
         },
         {
             id: "02",
             name: "About",
-            link: "/about",
+            link: "/home/about",
             icon: <FaRegUser />
         },
         {
-            id: "02",
+            id: "06",
             name: "Resume",
-            link: "/resume",
+            link: "/home/resume",
             icon: <CgNotes />
         },
         {
             id: "03",
             name: "Works",
-            link: "/works",
+            link: "/home/works",
             icon: <FiCodesandbox />
         },
         {
             id: "04",
             name: "Blogs",
-            link: "/blogs",
+            link: "/home/blogs",
             icon: <FaBlogger />
         },
         {
             id: "05",
             name: "Contact",
-            link: "/contact",
+            link: "/home/contact",
             icon: <RiContactsBookLine />
         },
     ]

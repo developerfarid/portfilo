@@ -21,14 +21,14 @@ const Header = () => {
         <header className="z-50">
             <div className='container'>
                 <div className='flex justify-between items-center'>
-                    <div className="flex justify-between w-full ">
-                        <div className='flex justify-between w-full items-center space-x-4 my-8 lg:my-0 '>
-                        <Link className='text-5xl font-semibold' to='/'><img src={logo} alt="" /></Link>
-                       <div className="flex">
-                       { !check ?  <span ><MdDarkMode className='text-white text-3xl' onClick={()=> handle("dark")} /></span>:
-                        <span ><FiSun className='text-white text-3xl' onClick={()=> handle("light")}  /></span>}
-                      {!menuOpen ?   <span onClick={()=> setMenuOpen(!menuOpen) } className='lg:hidden block text-black dark:text-white text-3xl ml-3 '><AiOutlineMenu /></span>:
-                      <span onClick={()=> setMenuOpen(!menuOpen) } className='lg:hidden block text-black dark:text-white text-3xl ml-3 '><AiOutlineClose /></span>}
+                    <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black ">
+                        <div className='flex justify-between w-full items-center space-x-4 lg:my-8 my-5 '>
+                        <Link className='text-5xl font-semibold' to='/'><img className='h-[26px] lg:h-[50px]' src={logo} alt="" /></Link>
+                       <div className="flex items-center">
+                       { !check ?  <span className='bg-white w-[40px] opacity-100 visible flex lg:opacity-0 lg:hidden  h-[40px]  rounded-full  justify-center items-center  ' ><MdDarkMode className='text-black text-3xl' onClick={()=> handle("dark")} /></span>:
+                        <span className='bg-[#4D4D4D] w-[40px] h-[40px] rounded-full flex justify-center items-center  '><FiSun className='text-white text-3xl' onClick={()=> handle("light")}  /></span>}
+                      {!menuOpen ?   <span onClick={()=> setMenuOpen(!menuOpen) } className='lg:opacity-0 lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center items-center text-black dark:text-white text-3xl ml-3 '><AiOutlineMenu /></span>:
+                      <span onClick={()=> setMenuOpen(!menuOpen) } className='lg:opacity-0 lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center items-center text-white text-3xl ml-3 '><AiOutlineClose /></span>}
                            </div> 
                       </div>
                   
@@ -36,18 +36,20 @@ const Header = () => {
 
                   
                     </div>
-                    <nav className={`${menuOpen ? 'block' : 'hidden lg:block'}`}>
-                        <ul className={`${menuOpen ? 'block absolute left-0 top-20 w-full' : 'flex my-12 '}`}>
+                    <nav className={`${menuOpen ? 'block  dark:bg-black ' : 'hidden lg:block'}`}>
+                        <ul className={`${menuOpen ? 'block absolute left-0 dark:rounded-b-[20px] top-20 z-[22222222222222] w-full bg-white dark:bg-black drop-shadow-lg ' : 'flex my-12 '}`}>
                             {menuItem.map((item) => (
-                                <li key={item.id} className=' ' >
+                                <li onClick={() => setMenuOpen(false)} key={item.id} >
                                     <NavLink
                                          key={item.id}
-                                        activeClassName=" text-white  bg-gradient-to-r from-[#FA5252] to-[#DD2476] "
-                                        inactiveClassName=" dark:text-[#A6A6A6] dark:hover:text-white dark:bg-[#212425] hover:text-white   hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
+                                        activeClassName=" text-[#FA5252]  "
+                                        inactiveClassName=" dark:text-white dark:hover:text-[#FA5252]  hover:text-[#FA5252]  "
                                     
-                                        className=' rounded-md  cursor-pointer  transition-colors duration-300 ease-in-out  font-poppins  bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center' to={item?.link}><span className='mr-2 text-xl'>{item?.icon}</span> {item?.name}</NavLink>
+                                        className={`${menuOpen ? " pl-3": ' mx-2.5 rounded-md '}    cursor-pointer  transition-colors duration-300 ease-in-out  font-poppins   text-gray-lite font-medium   flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center`}  to={item?.link}><span className='mr-2 text-xl'>{item?.icon}</span> {item?.name}</NavLink>
                                 </li>
                             ))}
+                            { !check ?  <span className='bg-white w-[40px] hidden  h-[40px] rounded-full lg:flex justify-center items-center  ' ><MdDarkMode className='text-black text-3xl' onClick={()=> handle("dark")} /></span>:
+                        <span className='bg-black w-[40px] h-[40px] hidden  rounded-full lg:flex justify-center items-center  '><FiSun className='text-white text-3xl' onClick={()=> handle("light")}  /></span>}
                         </ul>
                     </nav>
                 </div>

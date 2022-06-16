@@ -76,12 +76,12 @@ const About = () => {
     return (
         <>
             <section>
-                <div className='container rounded-2xl bg-white dark:bg-black  px-2 sm:px-5 md:px-10 lg:px-20'>
+                <div className='container md:rounded-2xl bg-white dark:bg-black  px-2 sm:px-5 md:px-10 lg:px-20'>
                     <div className='  py-12 '>
                         <h2 className='after-effect after:left-52'>About Me</h2>
                         <div className='grid grid-cols-12 md:gap-10 pt-4 md:pt-[60px] items-center'>
                             <div className='col-span-12 md:col-span-4'>
-                                <img className='w-[330px] h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0' src={aboutImage} alt="" />
+                                <img className='w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0' src={aboutImage} alt="" />
                             </div>
                             <div className='col-span-12 md:col-span-8 space-y-2.5'>
                                 <div className='mr-16'>
@@ -144,7 +144,7 @@ const About = () => {
 
                     </div>
                     <div>
-                    {/* <SliderCommon /> */}
+                    <SliderCommon />
                     </div>
                     
                     <Footer bg={"#FFFF"} />

@@ -14,7 +14,7 @@ const Resume = () => {
 
   return (
     <>
-      <section className="bg-white  rounded-2xl dark:bg-black">
+      <section className="bg-white  md:rounded-2xl dark:bg-black">
         <div className="container  sm:px-5 md:px-10 lg:px-20">
           <div className="py-12 px-4">
             <h2 className="after-effect after:left-44">Resume</h2>
