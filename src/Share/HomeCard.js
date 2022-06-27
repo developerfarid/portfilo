@@ -14,18 +14,19 @@ import img from "../images/avatar.jpg";
 
 const HomeCard = () => {
   const socialArray = [
-    { icon: FaFacebookF, color: "#1773EA", link: "https://www.facebook.com/" },
+    { icon: FaFacebookF, color: "#ffffff", link: "https://www.facebook.com/" },
     { icon: FaTwitter, color: "#1C9CEA", link: "https://twitter.com/" },
     { icon: FaDribbble, color: "#e14a84", link: "https://dribbble.com/" },
-    { icon: FaLinkedinIn, color: "#144679", link: "https://www.linkedin.com/" },
+    { icon: FaLinkedinIn, color: "#0072b1", link: "https://www.linkedin.com/" },
   ];
   return (
-    <div className="w-full mb-6 lg:mb-0  mx-auto  relative bg-white text-center dark:bg-black px-6 rounded-[20px] ">
+    <div className="w-full mb-6 lg:mb-0  mx-auto  relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0 ">
       <img
         src={img}
         className="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto  rounded-[20px] -mt-[140px]"
         alt=""
       />
+      {/* Social card */}
       <div className="pt-[100px] pb-8">
         <h1 className="mt-6 mb-1 text-5xl font-semibold  dark:text-white">
           Monalisa Ashley
@@ -34,27 +35,53 @@ const HomeCard = () => {
           Ui/Ux Designer
         </h3>
 
-        <div className="flex justify-center space-x-3">
-          {socialArray.map((item, i) => {
-            const Icon = item.icon;
-            return (
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <span className={`socialbtn text-[${item.color}]`}>
-              <Icon />
-            </span></a>
-            );
-          })}
+        {/* Social Links */}
 
-          {/* <span className="socialbtn text-[#1C9CEA]">
-            <FaTwitter />
-          </span>
-          <span className="socialbtn text-[#e14a84] ">
-            <FaDribbble />
-          </span>
-          <span className="socialbtn text-[#144679]">
-            <FaLinkedinIn />
-          </span> */}
+        <div className="flex justify-center space-x-3">
+          {/* facebook link add here */}
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="socialbtn text-[#1773EA]">
+              <FaFacebookF />
+            </span>
+          </a>
+                 {/* twitter link add here */}
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="socialbtn text-[#1C9CEA]">
+              <FaTwitter />
+            </span>
+          </a>
+                 {/* drop link add here */}
+          <a
+            href="https://dribbble.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="socialbtn text-[#e14a84] ">
+              <FaDribbble />
+            </span>
+          </a>
+                 {/* linkedin link add here */}
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="socialbtn text-[#0072b1]">
+              <FaLinkedinIn />
+            </span>
+          </a>
         </div>
+
+        {/* personal information */}
+        
         <div className="p-7 rounded-2xl mt-7  bg-[#F3F6F6] dark:bg-[#1D1D1D]">
           <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
             <span className="socialbtn bg-white dark:bg-black text-[#E93B81] shadow-md">

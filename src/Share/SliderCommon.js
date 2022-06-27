@@ -3,7 +3,10 @@ import Slider from "react-slick";
 import UseData from "../Hooks/UseData";
 
 const SliderCommon = () => {
-  const { imgArray } = UseData();
+  const { sliderImg } = UseData();
+
+  // responsive slider element
+
   const settings = {
     dots: false,
     infinite: true,
@@ -51,15 +54,16 @@ const SliderCommon = () => {
       },
     ],
   };
+
   return (
     <div className="bg-[#F8FBFB] dark:bg-[#0D0D0D] max-w-full h-auto   py-10 rounded-xl">
       <h3 className="text-center dark:text-white text-6xl mb-3 font-semibold ">Clients</h3>
-      <Slider
-        className=""
-        {...settings}
-      >
-        {imgArray.map((item) => (
-          <img className=" overflow-hidden brand-img" src={item} alt="" />
+      <Slider {...settings} >
+
+        {/* slider array */}
+
+        {sliderImg.map((item, i) => (
+          <img key={i} className=" overflow-hidden brand-img" src={item} alt="" />
         ))}
       </Slider>
     </div>

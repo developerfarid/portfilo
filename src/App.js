@@ -1,8 +1,7 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContextProvider from "./Context/ContextProvider";
 import About from "./Pages/About/About";
 import AboutTwo from "./Pages/About/AboutTwo";
@@ -20,38 +19,36 @@ import ResumeTwo from "./Pages/Resume/ResumeTwo";
 import Preview from "./Share/Preview";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <ContextProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Preview />} />
-          <Route path="/home"   element={<Home />}>
-           
-            <Route index  element={<HomePage />} />
-            <Route path="homePage"  element={<HomePage />} />
+          <Route path="/home" element={<Home />}>
+            <Route index element={<HomePage />} />
+            <Route path="homePage" element={<HomePage />} />
             <Route path="resume" element={<Resume />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="works" element={<Portfilo />} />
-
           </Route>
-          <Route  path='/homeTwo' element={<HomeTwo />}>
-          <Route index  element={<AboutTwo />} />
-          <Route  path="about" element={<AboutTwo />} />
+          <Route path="/homeTwo" element={<HomeTwo />}>
+            {/* <Route  path="home" element={<HomeCard />} /> */}
+            <Route index element={<AboutTwo />} />
+            <Route path="about" element={<AboutTwo />} />
             <Route path="resume" element={<ResumeTwo />} />
-         
             <Route path="contact" element={<ContactTwo />} />
             <Route path="blogs" element={<BlogTwo />} />
             <Route path="works" element={<PortfiloTwo />} />
-
           </Route>
         </Routes>
-     
       </BrowserRouter>
     </ContextProvider>
-
-
   );
 }
 

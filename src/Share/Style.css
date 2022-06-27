@@ -1,18 +1,12 @@
-.ok {
-  color: red !important;
-}
-
 .brand-img{
   max-width: 100% !important;
   width: auto !important;
   height: auto !important;
 }
 .ReactModal__Overlay {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
-ReactModal__Content ReactModal__Content--after-open{
-  overflow-y: scroll!important;
-}
+
 .slick-slide {
   padding: 30px 60px;
   align-items: center;
@@ -33,6 +27,7 @@ ReactModal__Content ReactModal__Content--after-open{
   display: flex;
   margin-left: -30px; /* gutter size offset */
   width: auto;
+  min-height: 50vh;
 }
 .my-masonry-grid_column {
   padding-left: 30px; /* gutter size */
@@ -62,6 +57,23 @@ ReactModal__Content ReactModal__Content--after-open{
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
 }
+.linked{
+  color: white !important;
+}
+/* input:-internal-autofill-selected {
+  background: transparent !important;
+} */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+ {
+
+  -webkit-text-fill-color: gray;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: none !important;
+}
+
 
 @media screen and (min-width: 640px) {
   .swiper-container {
